@@ -11,8 +11,8 @@ const Login = () => {
       {loading ? (
         <Spinner />
       ) : (
-        <div className="row g-0">
-          <div className="col-md-7 form-banner">
+        <div className="row g-4">
+          <div className="col-md-8 form-banner">
             <img src="./assets/images/banner1.jpg" alt="loginImage" />
           </div>
           <div className="col-md-5 form-container">
