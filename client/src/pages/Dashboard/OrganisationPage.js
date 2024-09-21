@@ -9,18 +9,18 @@ const OrganisationPage = () => {
   const { user } = useSelector((state) => state.auth);
   const [data, setData] = useState([]);
   //find org records
-  const getOrg = async () => {
+  
+      }
+      if (user?.role === "hospital") {
+        const { data } = await API.get(
+          "/inventoconst getOrg = async () => {
     try {
       if (user?.role === "donar") {
         const { data } = await API.get("/inventory/get-organisation");
         //   console.log(data);
         if (data?.success) {
           setData(data?.organisations);
-        }
-      }
-      if (user?.role === "hospital") {
-        const { data } = await API.get(
-          "/inventory/get-organisation-for-hospital"
+        }ry/get-organisation-for-hospital"
         );
         //   console.log(data);
         if (data?.success) {
@@ -34,7 +34,7 @@ const OrganisationPage = () => {
 
   useEffect(() => {
     getOrg();
-  }, [user]);
+  }, [getOrg]);
 
   return (
     <Layout>
