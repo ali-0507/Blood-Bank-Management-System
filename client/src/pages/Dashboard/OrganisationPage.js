@@ -38,8 +38,8 @@ const OrganisationPage = () => {
 
   return (
     <Layout>
-      <table className="table ">
-        <thead>
+      <table className="table " style={{ color: 'blue', backgroundColor: '#f8f9fa' }}>>
+        <thead style={{ backgroundColor: '#007bff', color: 'white' }}>
           <tr>
             <th scope="col">Name</th>
             <th scope="col">Email</th>
