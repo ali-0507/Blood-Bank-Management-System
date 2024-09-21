@@ -9,7 +9,7 @@ const OrganisationPage = () => {
   const { user } = useSelector((state) => state.auth);
   const [data, setData] = useState([]);
 
-  //find org records
+  // find org records
   const getOrg = useCallback(async () => {
     try {
       if (user?.role === "donar") {
@@ -26,20 +26,16 @@ const OrganisationPage = () => {
     } catch (error) {
       console.log(error);
     }
-  }, [user]); // 'user' as a dependency because it's used inside getOrg
+  }, [user]);
 
   useEffect(() => {
     getOrg();
-  }, [getOrg]); // Now 'getOrg' is a stable dependency
+  }, [getOrg]);
 
   return (
     <Layout>
-<<<<<<< HEAD
-      <table className="table">
-=======
-      <table className="table" >
->>>>>>> 8521aa92dbe61ee6602d22c570b136913705c747
-        <thead>
+      <table className="table" style={{ color: 'blue', backgroundColor: '#f8f9fa' }}>
+        <thead style={{ backgroundColor: '#007bff', color: 'white' }}>
           <tr>
             <th scope="col">Name</th>
             <th scope="col">Email</th>
