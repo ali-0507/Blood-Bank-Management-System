@@ -20,7 +20,7 @@ const OrganisationPage = () => {
       }
       if (user?.role === "hospital") {
         const { data } = await API.get(
-          "/inventory/get-orgnaisation-for-hospital"
+          "/inventory/get-organisation-for-hospital"
         );
         //   console.log(data);
         if (data?.success) {
