@@ -35,7 +35,7 @@ const Donation = () => {
         <table className="table">
           <thead>
             <tr>
-              <th scope="col" placeholder="Enter your Blood Group">Blood Group:</th>
+              <th scope="col">Blood Group:</th>
               <th scope="col">Inventory Type:</th>
               <th scope="col">Quantity:</th>
               <th scope="col">Email:</th>
