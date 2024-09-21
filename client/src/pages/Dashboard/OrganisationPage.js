@@ -34,7 +34,7 @@ const OrganisationPage = () => {
 
   useEffect(() => {
     getOrg();
-  }, [user]);
+  } [user]);
 
   return (
     <Layout>
