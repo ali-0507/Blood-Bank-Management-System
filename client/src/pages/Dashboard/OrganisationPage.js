@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import Layout from "./../../components/shared/Layout/Layout";
 import moment from "moment";
 import { useSelector } from "react-redux";
@@ -8,21 +8,17 @@ const OrganisationPage = () => {
   // get current user
   const { user } = useSelector((state) => state.auth);
   const [data, setData] = useState([]);
+
   //find org records
-  
-      }
-      if (user?.role === "hospital") {
-        const { data } = await API.get(
-          "/inventoconst getOrg = async () => {
+  const getOrg = useCallback(async () => {
     try {
       if (user?.role === "donar") {
         const { data } = await API.get("/inventory/get-organisation");
-        //   console.log(data);
         if (data?.success) {
           setData(data?.organisations);
-        }ry/get-organisation-for-hospital"
-        );
-        //   console.log(data);
+        }
+      } else if (user?.role === "hospital") {
+        const { data } = await API.get("/inventory/get-organisation-for-hospital");
         if (data?.success) {
           setData(data?.organisations);
         }
@@ -30,20 +26,16 @@ const OrganisationPage = () => {
     } catch (error) {
       console.log(error);
     }
-  };
+  }, [user]); // 'user' as a dependency because it's used inside getOrg
 
   useEffect(() => {
     getOrg();
-<<<<<<< HEAD
-  }, [getOrg]);
-=======
-  } [user]);
->>>>>>> 9c97b1820d8cff8c3de861dbdd37b73f7ec983e2
+  }, [getOrg]); // Now 'getOrg' is a stable dependency
 
   return (
     <Layout>
-      <table className="table " style={{ color: 'blue', backgroundColor: '#f8f9fa' }}>>
-        <thead style={{ backgroundColor: '#007bff', color: 'white' }}>
+      <table className="table">
+        <thead>
           <tr>
             <th scope="col">Name</th>
             <th scope="col">Email</th>
