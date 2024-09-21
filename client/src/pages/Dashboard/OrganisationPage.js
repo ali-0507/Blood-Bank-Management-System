@@ -34,12 +34,16 @@ const OrganisationPage = () => {
 
   useEffect(() => {
     getOrg();
+<<<<<<< HEAD
   }, [getOrg]);
+=======
+  } [user]);
+>>>>>>> 9c97b1820d8cff8c3de861dbdd37b73f7ec983e2
 
   return (
     <Layout>
-      <table className="table ">
-        <thead>
+      <table className="table " style={{ color: 'blue', backgroundColor: '#f8f9fa' }}>>
+        <thead style={{ backgroundColor: '#007bff', color: 'white' }}>
           <tr>
             <th scope="col">Name</th>
             <th scope="col">Email</th>
