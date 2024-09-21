@@ -15,7 +15,7 @@ const Register = () => {
           <div className="col-md-7 form-banner ">
             <img src="./assets/images/banner2.jpg" alt="registerImage" />
           </div>
-          <div className="col-md-5 form-container">
+          <div className="col-md-4 form-container">
             <Form
               formTitle={"Register"}
               submitBtn={"Register"}
