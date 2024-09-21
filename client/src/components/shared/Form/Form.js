@@ -209,7 +209,7 @@ const Form = ({ formType, submitBtn, formTitle }) => {
               <Link to="/login"> Login !</Link>
             </p>
           )}
-          <button className="btn btn-primary" type="submit" backgroundColor="green">
+          <button className="btn btn-primary" type="submit">
             {submitBtn}
           </button>
         </div>
