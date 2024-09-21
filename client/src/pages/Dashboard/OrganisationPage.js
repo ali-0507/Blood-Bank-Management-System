@@ -34,7 +34,11 @@ const OrganisationPage = () => {
 
   return (
     <Layout>
+<<<<<<< HEAD
       <table className="table">
+=======
+      <table className="table" >
+>>>>>>> 8521aa92dbe61ee6602d22c570b136913705c747
         <thead>
           <tr>
             <th scope="col">Name</th>
