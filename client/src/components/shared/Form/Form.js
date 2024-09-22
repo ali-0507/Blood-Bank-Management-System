@@ -211,11 +211,8 @@ const Form = ({ formType, submitBtn, formTitle }) => {
             </p>
           )}
           <button
-            className="btn red-btn"
-            type="submit"
-            style={{ backgroundColor: "#800000", color: "white" }}
-          >
-            {submitBtn}
+            className="btn maroon-btn"  type="submit" style={{backgroundColor: "#800000", color: "white"}}>
+              {submitBtn}
           </button>
         </div>
       </form>
