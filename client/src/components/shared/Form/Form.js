@@ -98,7 +98,7 @@ const Form = ({ formType, submitBtn, formTitle }) => {
               return (
                 <>
                   <InputType
-                    labelText={"email"}
+                    labelText={"Email"}
                     labelFor={"forEmail"}
                     inputType={"email"}
                     name={"email"}
@@ -150,7 +150,7 @@ const Form = ({ formType, submitBtn, formTitle }) => {
             />
           )}
           <InputType
-            labelText={"email"}
+            labelText={"Email"}
             labelFor={"forEmail"}
             inputType={"email"}
             name={"email"}
@@ -166,7 +166,7 @@ const Form = ({ formType, submitBtn, formTitle }) => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <InputType
-            labelText={"website"}
+            labelText={"Website"}
             labelFor={"forWebsite"}
             inputType={"text"}
             name={"website"}
@@ -202,18 +202,18 @@ const Form = ({ formType, submitBtn, formTitle }) => {
           {formType === "login" ? (
             <p>
               Not registered yet?
-              <Link to="/register"> Register Here!</Link>
+              <Link to="/register"> Register Here !!</Link>
             </p>
           ) : (
             <p>
               Already a User? Please
-              <Link to="/login"> Login!</Link>
+              <Link to="/login"> Login !!</Link>
             </p>
           )}
           <button
             className="btn red-btn"
             type="submit"
-            style={{ backgroundColor: "hsl(0, 79%, 28%)", color: "white" }}
+            style={{ backgroundColor: "#800000", color: "white" }}
           >
             {submitBtn}
           </button>
