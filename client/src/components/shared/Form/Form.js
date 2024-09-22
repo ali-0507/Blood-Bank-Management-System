@@ -205,11 +205,15 @@ const Form = ({ formType, submitBtn, formTitle }) => {
             </p>
           ) : (
             <p>
-              ALready Usser Please
+              Already User Please
               <Link to="/login"> Login !</Link>
             </p>
           )}
+<<<<<<< HEAD
           <button className="btn red-btn" type="submit" style={{ backgroundColor: "hsl(0, 79%, 28%)", color: "white" }}>
+=======
+          <button className="btn btn-primary" type="submit" >
+>>>>>>> 589c9855e37107ff8a94bf6bc273a7fed15f5752
             {submitBtn}
           </button>
         </div>
