@@ -209,7 +209,7 @@ const Form = ({ formType, submitBtn, formTitle }) => {
               <Link to="/login"> Login !</Link>
             </p>
           )}
-          <button className="btn btn-primary" type="submit"  style={{ backgroundColor: "red", borderColor: "red" }}>
+          <button className="btn red-btn" type="submit" style={{ backgroundColor: "hsl(0, 79%, 28%)", color: "white" }}>
             {submitBtn}
           </button>
         </div>

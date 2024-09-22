@@ -18,12 +18,12 @@ const Header = () => {
       <nav className="navbar">
         <div className="container-fluid ">
           <div className="navbar-brand h1 ">
-            <BiDonateBlood color="blue" /> Blood Bank App
+            <BiDonateBlood color="red" /> Red Drop Donors App
           </div>
           <ul className="navbar-nav flex-row">
             <li className="nav-item mx-3">
               <p className="nav-link">
-                <BiUserCircle /> Welcome{" "}
+                <BiUserCircle /> Welcome {" "}
                 {user?.name || user?.hospitalName || user?.organisationName}
                 &nbsp;
                 <span className="badge bg-secondary">{user?.role}</span>
